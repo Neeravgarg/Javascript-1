@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            lab
+        </title>
+        <script>
+            function myfunc(){
+               var a = document.getElementById("text1").value;
+               var b
+               if(a < 18)
+                {
+                    b = "You're just a pup!";
+                } 
+                else if(a >= 18 && a < 30)
+                {
+                    b = "Welcome to young adulthood... Have fund now (while you can!)";
+                } 
+                else if(a >= 30 && a<40)
+                {
+                    b = "It's time to get serious about career and family";
+                } 
+                else if (a >= 40 && a<50)
+                {
+                    b= "Time to start thinking abut retirement. Make sure you're saving.";
+                } else if (a>=50 && a<60)
+                {
+                    b = "Enjoy your life now! You've done it well.”";
+                }
+                else{
+                    b = "Enjoy your life now! You've dont well.!"
+                }
+
+
+               document.getElementById("ag").value = b;
+               
+            
+            }
+
+            function neerav(){
+                
+                var c = document.getElementById("discountCode").value;
+                var e = document.getElementById("value").value;
+                var d
+                var f
+
+                switch (c) {
+                    case "a":
+                    case "A":
+                        d = e*0.375
+                        f = "you got 37.5% discount"
+                        break;
+                
+                    case "b":
+                    case "B":
+                        d = e*0.50
+                        f = "you got 50% discount"
+                        break;
+                    
+                    case "c":
+                    case "C":
+                        d=e*0.75
+                        f = "you got 75% discount"
+                        break;
+                    
+                    case "d":
+                    case "D":
+                        d=e*0.10
+                        f = "you got 10% discount"
+                        break;
+                }
+
+                var g = e - d
+                document.getElementById("1").value = g;
+                document.getElementById("2").value = f;
+            }
+        </script>
+    </head>
+    <body>
+        <input id="text1"><br>
+        <button style="width: 50px;margin-bottom: 10px;" onclick="myfunc()"></button><br>
+        <input  style="width: 300px;" readonly id="ag"><br><br>
+
+        <input id="discountCode"><br>
+        <input id="value">
+        <button style="width: 50px;height:20px;margin-bottom: 10px;" onclick="neerav()""> click me</button><br>
+        <input style="width: 300px;"  id="1" readonly >
+        <input style="width:300px;" id = "2" readonly>
+
+    </body>
+</html>

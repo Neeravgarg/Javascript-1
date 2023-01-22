@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript" type="text/javascript">
+        
+        var a = parseInt(prompt("What is the principal amount you want to deposite (in rupees)?"))
+        var b = parseFloat(prompt("What is the rate of interest (like 0.5 for 5%)?"))
+        var c = parseInt(prompt("for how many months do you want to deposite?"))
+        
+        
+        var table = document.getElementById("table1")
+        var row = table.insertRow(1)
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var d  = 0
+        while(d<c){
+            var e = parseInt(a * b)
+            var a = e + a 
+            d++
+            cell1.innerHTML = d
+            cell2.innerHTML = e
+            cell3.innerHTML = a
+        }
+    
+    </script>
+    <style>
+        table, td {
+        border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table id="table1" >
+        <tr >
+            <td style="border-color :white;"></td>
+            <td style="border-color: white;"></td>
+            <td style="border-color: white;"></td>
+
+        
+        </tr>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var poem = "With Rue My Heart Is Laden<br>For Golden Friends I Had<br>For Many a Rose-Lipped Maiden<br>And Many a Light-Foot Lad<br>By Brooks To Broad For Leaping<br>The Light-Foot Boys are Laid<br>The Rose-Lipped Girls are Sleeping<br>In Fields Where Roses Fade"
+        for(a in poem)
+        {
+            if(poem[a]=="a"||poem[a]=="A"||poem[a]=="e"||poem[a]=="E"||poem[a]=="i"||poem[a]=="I"||poem[a]=="o"||poem[a]=="O"||poem[a]=="u"||poem[a]=="U" ){
+                
+                document.write("X")
+            }
+            else{
+                document.write(poem[a])
+            }
+            
+        }
+        //document.write(poem[0])
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function my(){
+        var pa1 = document.getElementById("first").value
+        var pa2 = document.getElementById("last").value
+        var pa3 = document.getElementById("email").value
+        var pa4 = document.getElementById("no").value
+        if(pa1.length >= 3 && pa2.length>=3 &&  pa4.length==10){
+            document.getElementById("p1").innerText = "a"
+        }
+        else if (){
+        }
+        }
+
+    </script>
+    <input placeholder="first name" id="first"><p id="p1"></p>
+    <input placeholder="last name" id="last"><br><br>
+    <input placeholder="email address" type="email" id="email"><br><br>
+    <input placeholder="mobile no." id="no" type="tel"><br>
+    <button onclick="my()">click me</button>
+    
+
+</body>
+</html>

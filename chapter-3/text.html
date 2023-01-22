@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            conditionals
+        </title>
+        <script>
+            function checker(){
+                var a
+                a = document.getElementById("text").value
+                if(a>=18)
+                {
+                    var b
+                    b = "you can vote"
+                    document.getElementById("text1").value = b
+                }
+                else{
+                    document.getElementById("text1").value = 'you cannot vote'
+                }
+                }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="text">
+        <input type="button" onclick="checker()" value="check">
+        <input style="border-color: white; background-color: antiquewhite;" type="text" id="text1" readonly>
+    </body>
+</html>
